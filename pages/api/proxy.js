@@ -6,7 +6,7 @@ export default async (req, res) => {
   } = req;
 
   const result = await axios.post(
-    `${process.env.BACKEND}/${proxyRoute}`,
+    `${process.env.NEXT_PUBLIC_BACKEND}/${proxyRoute}`,
     req.body
   );
   res.json(result.data);
