@@ -1,22 +1,22 @@
-import { useState, useEffect } from 'react';
-import { LOGGED_IN_URL } from '@/lib/constants';
-import { useRouter } from 'next/router';
-import { useAuth } from '@/lib/auth';
-import Modal from '@/components/common/Modal';
-import Login from './signin/Login';
-import Phone from './signin/Phone';
+import { useState, useEffect } from "react";
+import { LOGGED_IN_URL } from "@/lib/constants";
+import { useRouter } from "next/router";
+import { useAuth } from "@/lib/auth";
+import Modal from "@/components/common/Modal";
+import Login from "./signin/Login";
+import Phone from "./signin/Phone";
 
 const STEPS = {
   Closed: 0,
   Login: 1,
-  Phone: 2
+  Phone: 2,
 };
 
 const Content = ({ setOpen }) => {
   const router = useRouter();
   const auth = useAuth();
   const [step, setStep] = useState(1);
-  const [phone, setPhone] = useState('');
+  const [phone, setPhone] = useState("");
 
   const advance = () => setStep(step + 1);
 
@@ -27,9 +27,11 @@ const Content = ({ setOpen }) => {
 
   useEffect(() => {
     if (auth.user && auth.user.phone) {
-      finalState();
+      // finalState();
+      setOpen(false);
     } else if (step == STEPS.Closed) {
-      auth.updateUser({ phone }).then(finalState);
+      auth.updateUser({ phone });
+      //.then(finalState);
     }
   }, [step]);
 
