@@ -4,13 +4,11 @@ We submitted this project to CalvinHacks Hackathon 2021
 
 Devpost: https://devpost.com/software/virtual-ly
 
-Live website: (coming soon)
-
-Pitch demo: (coming soon)
 
 ## Inspiration
 
 ![alt text](https://i.imgur.com/7cKdUAI.jpg)
+
 Remote working conditions have become commonplace in today’s workplace. And with this kind of shift, it is more urgent than ever for organizations to leverage the best online collaboration tools to keep their teams productive and on the same page at all times. However, online collaboration has its own drawbacks, to jump in and out for endless tabs in your browser with different apps installed is tiring, we called it "Lost in the cloud".
 
 ## What it does
