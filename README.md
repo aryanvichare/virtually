@@ -1,34 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![alt text](https://media.giphy.com/media/03i0CuQE4z1gXCkCCC/giphy.gif)
 
-## Getting Started
+We submitted this project to Calvin Hacks.
 
-First, run the development server:
+Devpost: https://github.com/aryanvichare/virtually
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Live website: Coming Soon
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Pitch demo: (coming soon)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Remote working conditions have become commonplace in today’s workplace. And with this kind of shift, it is more urgent than ever for organizations to leverage the best online collaboration tools to keep their teams productive and on the same page at all times. However, online collaboration has its own drawbacks, to jump in and out for endless tabs in your browser with different apps installed is tiring, we called it "Lost in the cloud".
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## What it does
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![alt text](https://i.imgur.com/0aFxpCM.jpg)
 
-## Learn More
+**Virtual.ly** is a one-stop solution for that hassle. We simulate the real world's workspace and allow you to become more productive by providing you with all the necessary tools needed. We believe that collaboration and transparency are two key components of the modern workplace experience. That's why we built Virtual.ly, this could be an alternative to making virtual spaces more interactive, effective, and at the same time more accessible for everyone of all ages.
 
-To learn more about Next.js, take a look at the following resources:
+## Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Core features:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Collaboration room for you and your group
+- Collaborative whiteboarding - ideate in real-time
+- Collaborative browser - real-time browsing with your groups
+- Collaborative notes - real-time writing in notes with your groups
+- Live Chat - obviously, to chat with each other
+- Video and Audio Chat - for synchronous communication within your groups
 
-## Deploy on Vercel
+Others:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Online Presence Indicators for your group
+- User Accounts with OAuth
+- Secure Authentication - Through MFA with Mobile
+- Pomodoro Timer - to remind you when to take breaks and when to come back
+- Room timer - so you know whether you're being productive or not
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## How we built it
+
+- NextJS, React Frontend
+- NodeJS, Express Backend
+- Socket.IO for all our collab features, online presence, sharing, and carrying webrtc signal payloads
+- WebRTC for Video and Audio calls
+- Notivize for reminders and for our OTP Auth to signup your phone number
+- Firebase for our authentication
+- Firestore for our chat and user accounts
+
+## Challenges we ran into
+
+- CORS, We hate it and it hates us so it makes development hard
+- Websockets + React, Re-render can cause client reconnect spam
+- WebRTC, Brokering can be unreliable
+- Google App Engine, Sometimes it takes forever to deploy
+
+## Accomplishments that we're proud of
+
+- To ship this fully functional product within a short amount of time is a big accomplishment for us. Hopefully, we can also use this platform for our future meetings. We really want a central collaborative space for everyone :)
+
+## What we learned
+
+- Learned a lot with websockets and WebRTC
+- First time trying Google App Engine
+
+## What's next for Virtual.ly
+
+- Fix and polish up the rest of it
